@@ -12,5 +12,5 @@ export default function UserClient({ userId }: { userId: string }) {
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error: {error.message}</div>;
 
-  return <div>{data.name}のプロフィール</div>;
+  return <div>{data?.name}のプロフィール</div>;
 }
