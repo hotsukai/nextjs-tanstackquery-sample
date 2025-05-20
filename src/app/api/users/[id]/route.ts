@@ -1,7 +1,8 @@
+import { User } from '@/type'
 import { NextResponse } from 'next/server'
 
 // モックユーザーデータ
-const users = [
+const users: User[] = [
   { id: 1, name: 'user1', email: 'user1@example.com', role: 'admin' },
   { id: 2, name: 'user2', email: 'user2@example.com', role: 'user' },
   { id: 3, name: 'user3', email: 'user3@example.com', role: 'user' },
